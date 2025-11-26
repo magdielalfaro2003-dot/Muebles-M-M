@@ -18,7 +18,7 @@
 body {
     background: var(--negro);
     color: white;
-    background-image: url('fondo.png');  /* 👈 AQUÍ COLOCAS TU FONDO */
+    background-image: url('fondo.png');  /* 👈 TU FONDO */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
