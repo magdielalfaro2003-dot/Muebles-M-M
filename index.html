@@ -8,37 +8,34 @@
 </head>
 <body>
 
-  <!-- LOGO Y HAMBURGUESA -->
+  <!-- Logo y botón hamburguesa -->
   <img src="logo.jpg" alt="Logo Primera Mano" class="logo-menu" />
   <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  <!-- MENÚ LATERAL PREMIUM -->
+  <!-- Menú lateral -->
   <nav class="nav" id="nav">
-      <div class="nav-inner">
-          <a href="#inicio" class="nav-link">Inicio</a>
-          <a href="#catalogo" class="nav-link">Catálogo</a>
-          <a href="#ajustes" class="nav-link">Ajustes</a>
-          <a href="#contacto" class="nav-link">Contacto</a>
-      </div>
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#catalogo" class="nav-link">Catálogo</a>
+      <a href="#ajustes" class="nav-link">Ajustes</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </div>
   </nav>
 
-  <!-- OVERLAY -->
+  <!-- Overlay -->
   <div class="overlay" id="overlay"></div>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
-
-    <!-- HERO / INICIO -->
     <section id="inicio" class="hero elegant-entry">
       <h1>Bienvenido a <span>Primera Mano</span></h1>
       <p>Catálogo premium negro y dorado</p>
     </section>
 
-    <!-- CATÁLOGO -->
     <section id="catalogo" class="catalog elegant-entry">
       <h2>Catálogo</h2>
       <div class="catalog-grid">
@@ -49,24 +46,40 @@
       </div>
     </section>
 
-    <!-- AJUSTES -->
     <section id="ajustes" class="ajustes elegant-entry">
       <h2>Ajustes</h2>
       <p>Personaliza tu experiencia</p>
     </section>
 
-    <!-- CONTACTO -->
     <section id="contacto" class="ajustes elegant-entry">
       <h2>Contacto</h2>
       <p>Escríbenos para más información</p>
     </section>
-
   </main>
 
   <!-- FOOTER -->
   <footer class="footer">
     <p>© 2025 Primera Mano | Diseñado por Magdiel</p>
   </footer>
-  
+
+  <!-- SCRIPT -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    const overlay = document.getElementById('overlay');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      hamburger.classList.toggle('active');
+      overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', () => {
+      nav.classList.remove('open');
+      hamburger.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+  </script>
+
 </body>
 </html>
