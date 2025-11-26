@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera Mano – Catálogo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Primera Mano – Catálogo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <!-- MENÚ SUPERIOR -->
-    <header class="header elegant-entry">
-        <div class="logo-box">
-            <img src="logo.jpg" class="logo-img">
-            <h2 class="brand">Primera Mano</h2>
-        </div>
+  <!-- HEADER -->
+  <header class="header elegant-entry">
+    <div class="left">
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="right logo-box">
+      <img src="logo.png" class="logo-img" alt="Logo Primera Mano" />
+      <h2 class="brand">Primera Mano</h2>
+    </div>
+  </header>
 
-        <nav class="nav" id="navMenu">
-            <a href="#inicio">Inicio</a>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#ajustes">Ajustes</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+  <!-- NAV LATERAL (columna completa) -->
+  <aside class="nav" id="navMenu" aria-hidden="true">
+    <nav class="nav-inner" role="navigation" aria-label="Menú principal">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#catalogo" class="nav-link">Catálogo</a>
+      <a href="#ajustes" class="nav-link">Ajustes</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
 
-    <!-- PANTALLA DE INICIO -->
+      <div class="nav-footer">
+        <a href="#" class="nav-link">⚙ Ajustes</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Overlay para cerrar tocando fuera -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- CONTENIDO -->
+  <main>
     <section id="inicio" class="hero elegant-entry">
-        <h1>Bienvenido a <span>Primera Mano</span></h1>
-        <p>Catálogo premium negro y dorado</p>
+      <h1>Bienvenido a <span>Primera Mano</span></h1>
+      <p>Catálogo premium negro y dorado</p>
     </section>
 
-    <!-- CATÁLOGO -->
     <section id="catalogo" class="catalog elegant-entry">
-        <h2>Catálogo</h2>
-        <div class="catalog-grid">
-            <div class="item">Producto 1</div>
-            <div class="item">Producto 2</div>
-            <div class="item">Producto 3</div>
-            <div class="item">Producto 4</div>
-        </div>
+      <h2>Catálogo</h2>
+      <div class="catalog-grid">
+        <div class="item">Producto 1</div>
+        <div class="item">Producto 2</div>
+        <div class="item">Producto 3</div>
+        <div class="item">Producto 4</div>
+      </div>
     </section>
 
-    <!-- AJUSTES -->
     <section id="ajustes" class="ajustes elegant-entry">
-        <h2>Ajustes</h2>
-        <p>Personaliza tu experiencia</p>
+      <h2>Ajustes</h2>
+      <p>Personaliza tu experiencia</p>
     </section>
+  </main>
 
-    <!-- FOOTER PREMIUM -->
-    <footer class="footer">
-        <p>© 2025 Primera Mano | Diseñado por Magdiel</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Primera Mano | Diseñado por Magdiel</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
