@@ -34,28 +34,42 @@ body::before {
   z-index: -1;
 }
 
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* ancho del menú */
+    height: 100%; /* que llegue hasta abajo */
+    background: rgba(0,0,0,0.85);
+    padding: 20px;
+    transform: translateX(-100%); /* inicialmente escondido */
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
 /* ===== HEADER ===== */
 /* cuando se abre */
 .nav.open {
-  left: 0;
+    left: 0;
 }
 
 
 .logo-menu {
-  width: 90px;
-  height: 90px;
-  margin: 0 auto 20px auto;
-  display: block;
-  border-radius: 50%;
-  border: 3px solid gold;
-  object-fit: cover;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    display: block;
+    border-radius: 50%;
+    border: 3px solid gold;
+    object-fit: cover;
 }
 
 
 .nav-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 
