@@ -1,6 +1,25 @@
-🟡✨ Primera Mano – Catálogo Premium Negro & Dorado 🖤✨
-Bienvenido al repositorio oficial de Primera Mano, un sitio web premium diseñado con una estética negro + dorado, animaciones elegantes y una presentación digna de una marca de lujo.
-Desarrollado por Magdiel, fusionando estilo, minimalismo y elegancia digital.
+<div align="center">🟡✨ PRIMERA MANO ✨🟡
+EXPERIENCIA DIGITAL DE LUJO
+🖤 Catálogo Premium Negro & Dorado 🖤</div>
+<div align="center">
+✨ Elegancia. Exclusividad. Presencia.
+Bienvenido al repositorio oficial de Primera Mano, una experiencia digital creada con una estética negro & dorado diseñada para transmitir:
+
+🔸 Lujo absoluto
+🔸 Minimalismo moderno
+🔸 Brillo dorado premium
+🔸 Animaciones fluidas y elegantes
+
+Aquí, el diseño y el movimiento trabajan juntos para construir una identidad visual seria, exclusiva y profesional.
+Un proyecto donde el código también brilla.
+
+</div>
+<div align="center">
+🟡 UNA MARCA CON ESTILO PROPIO
+Desarrollado por Magdiel, este proyecto refleja carácter, presencia digital y un estilo que destaca entre la multitud.
+Cada detalle —colores, tipografía, animaciones— fue elegido para crear una atmósfera premium digna de una marca de lujo.
+
+</div>
 
 🟡✨ Características Principales
 🖤 Diseño Negro & Dorado Premium
