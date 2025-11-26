@@ -14,88 +14,81 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ===== FONDO PREMIUM CON EFECTO CRISTAL ===== */
 body {
-    background: var(--negro);
-    color: white;
-    background-image: url('fondo.png'); /* 👈 Cambia por tu fondo */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url('fondo.jpg') center/cover no-repeat fixed;
+  backdrop-filter: blur(0px);
+  color: #fff;
 }
 
-/* HEADER */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 25px;
-    background: rgba(0,0,0,0.85);
-    border-bottom: 2px solid var(--dorado);
-    backdrop-filter: blur(6px);
-    position: relative;
-    z-index: 50;
-}
 
-.menu-btn {
-    font-size: 32px;
-    color: var(--dorado-brillo);
-    background: none;
-    border: none;
-    cursor: pointer;
-    filter: drop-shadow(0 0 4px var(--dorado));
-}
-
-.logo-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo-img {
-    width: 60px;
-    filter: drop-shadow(0 0 6px var(--dorado-brillo));
-}
-
-.brand {
-    color: var(--dorado-brillo);
-    font-size: 26px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.nav {
+/* Capa oscura para que se vea mejor el contenido */
+body::before {
+  content: "";
   position: fixed;
-  top: 0;
-  left: -100%;
-  width: 70%;
-  height: 100vh;
-  background: black;
-  color: gold;
-  padding-top: 100px;
-  transition: left 0.4s ease;
-  z-index: 999;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
 }
 
-.nav.active {
+/* ===== HEADER ===== */
+/* cuando se abre */
+.nav.open {
   left: 0;
 }
 
-/* Fondo oscuro */
+
+.logo-menu {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid gold;
+  object-fit: cover;
+}
+
+
+.nav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.nav-link {
+  color: gold;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+
+
+.nav-link:hover {
+  background: rgba(255,215,0,0.3);
+  color: black;
+}
+
+
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.3);
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px);
   display: none;
-  z-index: 998;
 }
+
 
 .overlay.active {
   display: block;
 }
-
 /* HERO */
 .hero {
     padding: 140px 40px;
@@ -106,6 +99,27 @@ body {
 
 .hero span {
     color: var(--dorado-brillo);
+}
+
+/* ===== SECCIONES ===== */
+section {
+  padding: 60px 20px;
+  backdrop-filter: blur(5px);
+  background: rgba(0,0,0,0.25);
+  margin: 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,215,0,0.25);
+}
+
+
+h1 span {
+  color: gold;
+}
+
+
+h2 {
+  color: gold;
+  text-shadow: 0 0 8px rgba(255,215,0,0.7);
 }
 
 /* CATÁLOGO */
@@ -122,20 +136,21 @@ body {
 }
 
 /* TARJETAS */
+/* ===== CATÁLOGO ===== */
 .catalog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
 }
 
 .item {
-    background: rgba(15,15,15,0.85);
-    border: 3px solid var(--dorado);
-    padding: 30px;
-    border-radius: 14px;
-    text-align: center;
-    transition: 0.4s;
-    box-shadow: 0 0 18px rgba(212,175,55,0.25);
+  padding: 25px;
+  text-align: center;
+  background: rgba(255,255,255,0.07);
+  border-radius: 12px;
+  border: 1px solid rgba(255,215,0,0.3);
+  backdrop-filter: blur(6px);
+  color: white;
 }
 
 .item:hover {
@@ -143,13 +158,14 @@ body {
     box-shadow: 0 0 30px var(--dorado-brillo);
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 .footer {
-    padding: 25px;
-    text-align: center;
-    background: rgba(0,0,0,0.85);
-    border-top: 2px solid var(--dorado);
-    color: var(--dorado-brillo);
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  text-shadow: 0 0 5px gold;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
 }
 
 /* ANIMACIÓN */
