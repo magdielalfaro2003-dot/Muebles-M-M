@@ -59,7 +59,7 @@ Contacto
 /styles.css  
 /script.js  
 /banner.png  
-/logo.png  
+/logo.jpg 
 /README.md
 🚀 Cómo Ejecutarlo
 Clona el repositorio:
