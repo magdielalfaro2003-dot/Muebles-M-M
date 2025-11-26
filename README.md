@@ -1,1 +1,47 @@
+<p align="center">
+  <img src="banner.png" width="100%">
+</p>
+
+# ✨🟡 Primera Mano – Catálogo Premium Negro & Dorado 🖤✨
+
+[![Estilo Premium](https://img.shields.io/badge/Estilo-Premium-d4af37?style=for-the-badge&logo=starship&logoColor=d4af37&labelColor=000)](#)
+[![Estado del Proyecto](https://img.shields.io/badge/Estado-Activo-000?style=for-the-badge&logo=github&logoColor=d4af37&labelColor=111)](#)
+[![Diseño](https://img.shields.io/badge/Diseño-Negro%20%2B%20Dorado-d4af37?style=for-the-badge&labelColor=000)](#)
+
+Bienvenido al repositorio oficial de **Primera Mano**, un sitio web premium diseñado con una estética **negro + dorado**, animaciones elegantes y una presentación digna de una marca de lujo.
+
+Desarrollado por **Magdiel**, fusionando estilo, minimalismo y elegancia digital.
+
+
+---
+
+## 🟡 ✨ Características Principales
+
+### 🖤 **Diseño Negro & Dorado Premium**
+- Paleta exclusiva  
+- Brillos dorados estilo lujo  
+- Encabezado elegante y minimalista  
+
+### 🎬 **Animaciones de Alta Calidad**
+- Entrada suave (fade + slide + glow)  
+- Detalles luminosos dorados  
+- Menú con animación elegante  
+
+### 📱 **Diseño Adaptativo (Responsive)**
+Compatible con:
+- Celulares  
+- Tablets  
+- PC  
+
+### 🧭 **Navegación Fluida**
+- Menú deslizable  
+- Inicio  
+- Ajustes  
+- Contacto  
+
+
+---
+
+## 📁 Estructura del Proyecto
+
 
