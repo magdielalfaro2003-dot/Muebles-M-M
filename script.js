@@ -1,33 +1,23 @@
-const menuBtn = document.getElementById('menuBtn');
-const navMenu = document.getElementById('navMenu');
-const overlay = document.getElementById('overlay');
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+const overlay = document.getElementById("overlay");
 
-function openMenu(){
-  navMenu.classList.add('open');
-  overlay.classList.add('show');
-  document.body.classList.add('menu-open');
-  menuBtn.setAttribute('aria-expanded','true');
-  navMenu.setAttribute('aria-hidden','false');
-}
-
-function closeMenu(){
-  navMenu.classList.remove('open');
-  overlay.classList.remove('show');
-  document.body.classList.remove('menu-open');
-  menuBtn.setAttribute('aria-expanded','false');
-  navMenu.setAttribute('aria-hidden','true');
-}
-
-// toggle
-menuBtn.addEventListener('click', () => {
-  if(navMenu.classList.contains('open')) closeMenu();
-  else openMenu();
+/* ABRIR MENÚ */
+menuBtn.addEventListener("click", () => {
+    navMenu.classList.add("show");
+    overlay.style.display = "block";
 });
 
-// cerrar tocando overlay
-overlay.addEventListener('click', closeMenu);
+/* CERRAR AL TOCAR FUERA */
+overlay.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+    overlay.style.display = "none";
+});
 
-// cerrar al presionar Esc
-document.addEventListener('keydown', (e) => {
-  if(e.key === 'Escape' && navMenu.classList.contains('open')) closeMenu();
+/* CERRAR AL TOCAR UN LINK */
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+        overlay.style.display = "none";
+    });
 });
