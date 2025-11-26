@@ -1,63 +1,50 @@
-<p align="center">
-  <img src="banner.png" width="100%">
-</p>
+🟡✨ Primera Mano – Catálogo Premium Negro & Dorado 🖤✨
+Bienvenido al repositorio oficial de Primera Mano, un sitio web premium diseñado con una estética negro + dorado, animaciones elegantes y una presentación digna de una marca de lujo.
+Desarrollado por Magdiel, fusionando estilo, minimalismo y elegancia digital.
 
-# ✨🟡 Primera Mano – Catálogo Premium Negro & Dorado 🖤✨
+🟡✨ Características Principales
+🖤 Diseño Negro & Dorado Premium
+Paleta exclusiva
 
-[![Estilo Premium](https://img.shields.io/badge/Estilo-Premium-d4af37?style=for-the-badge&logo=starship&logoColor=d4af37&labelColor=000)](#)
-[![Estado del Proyecto](https://img.shields.io/badge/Estado-Activo-000?style=for-the-badge&logo=github&logoColor=d4af37&labelColor=111)](#)
-[![Diseño](https://img.shields.io/badge/Diseño-Negro%20%2B%20Dorado-d4af37?style=for-the-badge&labelColor=000)](#)
+Brillos dorados estilo lujo
 
-Bienvenido al repositorio oficial de **Primera Mano**, un sitio web premium diseñado con una estética **negro + dorado**, animaciones elegantes y una presentación digna de una marca de lujo.
+Encabezado elegante y minimalista
 
-Desarrollado por **Magdiel**, fusionando estilo, minimalismo y elegancia digital.
+🎬 Animaciones de Alta Calidad
+Entrada suave (fade + slide + glow)
 
+Detalles luminosos dorados
 
----
+Menú con animación elegante
 
-## 🟡 ✨ Características Principales
-
-### 🖤 **Diseño Negro & Dorado Premium**
-- Paleta exclusiva  
-- Brillos dorados estilo lujo  
-- Encabezado elegante y minimalista  
-
-### 🎬 **Animaciones de Alta Calidad**
-- Entrada suave (fade + slide + glow)  
-- Detalles luminosos dorados  
-- Menú con animación elegante  
-
-### 📱 **Diseño Adaptativo (Responsive)**
+📱 Diseño Adaptativo (Responsive)
 Compatible con:
-- Celulares  
-- Tablets  
-- PC  
 
-### 🧭 **Navegación Fluida**
-- Menú deslizable  
-- Inicio  
-- Ajustes  
-- Contacto  
+Celulares
 
+Tablets
 
----
+PC
 
-## 📁 Estructura del Proyecto
-/index.html
-/styles.css
-/script.js
-/banner.png
-/logo.png
+🧭 Navegación Fluida
+Menú deslizable
+
+Inicio
+
+Ajustes
+
+Contacto
+
+📁 Estructura del Proyecto
+/index.html  
+/styles.css  
+/script.js  
+/banner.png  
+/logo.png  
 /README.md
+🚀 Cómo Ejecutarlo
+Clona el repositorio:
 
-
----
-
-## 🚀 Cómo Ejecutarlo
-
-1. Clona el repositorio:
-
-```bash
 git clone https://github.com/tu-usuario/tu-repositorio.git
 Abre el archivo principal:
 
@@ -89,5 +76,4 @@ Puedes modificarlo y adaptarlo a tu gusto.
 ✨ Mensaje Final
 Gracias por visitar este proyecto premium.
 El lujo también vive en el código. ✨
-
 
