@@ -1,1 +1,150 @@
+/* PALETA */
+:root {
+    --negro: #000;
+    --dorado: #d4af37;
+    --dorado-brillo: #f2d98c;
+    --azul-oscuro: #03182f;
+    --gris: #111;
+}
+
+/* RESETEO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--negro);
+    color: white;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: var(--gris);
+    border-bottom: 2px solid var(--dorado);
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 55px;
+}
+
+.brand {
+    font-size: 22px;
+    color: var(--dorado-brillo);
+}
+
+.menu-btn {
+    font-size: 28px;
+    background: none;
+    color: var(--dorado);
+    border: none;
+    cursor: pointer;
+}
+
+/* NAV */
+.nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0a0a0a;
+    width: 180px;
+    border-left: 2px solid var(--dorado);
+    flex-direction: column;
+}
+
+.nav a {
+    color: white;
+    padding: 12px;
+    border-bottom: 1px solid var(--gris);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background: var(--dorado);
+    color: black;
+    transition: 0.3s;
+}
+
+/* HERO */
+.hero {
+    padding: 120px 40px;
+    text-align: center;
+    background: linear-gradient(to bottom, #000, #0d0d0d);
+}
+
+.hero span {
+    color: var(--dorado-brillo);
+}
+
+/* CATÁLOGO */
+.catalog {
+    padding: 60px 40px;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.item {
+    padding: 40px;
+    background: #0c0c0c;
+    border: 2px solid var(--dorado);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* AJUSTES */
+.ajustes {
+    padding: 60px 40px;
+}
+
+/* FOOTER PREMIUM */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #050505;
+    border-top: 2px solid var(--dorado);
+    color: var(--dorado-brillo);
+    font-size: 15px;
+}
+
+/* ANIMACIÓN ELEGANTE */
+.elegant-entry {
+    opacity: 0;
+    transform: translateY(25px) scale(0.95);
+    animation: elegantShow 1.3s ease-out forwards;
+}
+
+@keyframes elegantShow {
+    0% {
+        opacity: 0;
+        transform: translateY(35px) scale(0.92);
+        filter: drop-shadow(0 0 0px var(--dorado));
+    }
+    40% {
+        opacity: 0.7;
+        transform: translateY(10px) scale(0.97);
+        filter: drop-shadow(0 0 10px var(--dorado-brillo));
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: drop-shadow(0 0 15px var(--dorado-brillo));
+    }
+}
 
