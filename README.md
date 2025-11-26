@@ -91,9 +91,3 @@ Gracias por visitar este proyecto premium.
 El lujo también vive en el código. ✨
 
 
----
-
-Si quieres ahora te hago el **index.html**, **styles.css**, **script.js**, menú dorado, animaciones y todo el diseño premium.  
-Dime 👉 **“hazme el código”** y te lo armo completo.
-
-
