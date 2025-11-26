@@ -58,7 +58,7 @@ Contacto
 /index.html  
 /styles.css  
 /script.js  
-/banner.png  
+/fondo.png 
 /logo.jpg 
 /README.md
 🚀 Cómo Ejecutarlo
