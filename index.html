@@ -2,50 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Primera Mano – Catálogo</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-  <!-- HEADER -->
-  <header class="header elegant-entry">
-    <div class="left">
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    </div>
-
-    <div class="right logo-box">
-      <img src="logo.jpg" class="logo-img" alt="Logo Primera Mano" />
-      <h2 class="brand">Primera Mano</h2>
-    </div>
-  </header>
+  <!-- LOGO Y HAMBURGUESA -->
+  <img src="logo.jpg" alt="Logo Primera Mano" class="logo-menu" />
+  <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
 
   <!-- MENÚ LATERAL PREMIUM -->
-  <aside class="nav" id="navMenu" aria-hidden="true">
-    <div class="menu-logo">
-      <img src="logo.jpg" alt="Logo" class="logo-menu">
-    </div>
-
-    <nav class="nav-inner" role="navigation" aria-label="Menú principal">
-      <a href="#inicio" class="nav-link">Inicio</a>
-      <a href="#catalogo" class="nav-link">Catálogo</a>
-      <a href="#ajustes" class="nav-link">Ajustes</a>
-      <a href="#contacto" class="nav-link">Contacto</a>
-
-      <div class="nav-footer">
-        <a href="#" class="nav-link footer-link">⚙ Ajustes</a>
+  <nav class="nav" id="nav">
+      <div class="nav-inner">
+          <a href="#inicio" class="nav-link">Inicio</a>
+          <a href="#catalogo" class="nav-link">Catálogo</a>
+          <a href="#ajustes" class="nav-link">Ajustes</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
       </div>
-    </nav>
-  </aside>
+  </nav>
 
-  <!-- Overlay para cerrar tocando fuera -->
+  <!-- OVERLAY -->
   <div class="overlay" id="overlay"></div>
 
-  <!-- CONTENIDO -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- INICIO -->
+    <!-- HERO / INICIO -->
     <section id="inicio" class="hero elegant-entry">
       <h1>Bienvenido a <span>Primera Mano</span></h1>
       <p>Catálogo premium negro y dorado</p>
@@ -80,8 +67,6 @@
   <footer class="footer">
     <p>© 2025 Primera Mano | Diseñado por Magdiel</p>
   </footer>
-
-  <!-- SCRIPT EXTERNO -->
-  <script src="script.js"></script>
+  
 </body>
 </html>
