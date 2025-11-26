@@ -1,22 +1,15 @@
-const menuBtn = document.getElementById('menuBtn');
-const navMenu = document.getElementById('navMenu');
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
 const overlay = document.getElementById('overlay');
 
-// ABRIR / CERRAR MENÚ
-menuBtn.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  overlay.classList.toggle('active');
-
-  // actualizar aria
-  const isOpen = navMenu.classList.contains('active');
-  menuBtn.setAttribute('aria-expanded', isOpen);
-  navMenu.setAttribute('aria-hidden', !isOpen);
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+    overlay.classList.toggle('active');
 });
 
-// CERRAR MENÚ AL TOCAR FUERA
 overlay.addEventListener('click', () => {
-  navMenu.classList.remove('active');
-  overlay.classList.remove('active');
-  menuBtn.setAttribute('aria-expanded', false);
-  navMenu.setAttribute('aria-hidden', true);
+    nav.classList.remove('open');
+    hamburger.classList.remove('active');
+    overlay.classList.remove('active');
 });
