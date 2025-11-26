@@ -1,4 +1,4 @@
-/* PALETA PREMIUM */
+/* ================== PALETA PREMIUM ================== */
 :root {
     --negro: #000;
     --dorado: #d4af37;
@@ -6,7 +6,7 @@
     --gris-oscuro: #0a0a0a;
 }
 
-/* RESET */
+/* ================== RESET ================== */
 * {
     margin: 0;
     padding: 0;
@@ -14,26 +14,26 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* ===== FONDO PREMIUM CON EFECTO CRISTAL ===== */
+/* ================== FONDO PREMIUM CON EFECTO CRISTAL ================== */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  background: url('fondo.jpg') center/cover no-repeat fixed;
-  backdrop-filter: blur(0px);
-  color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: url('fondo.jpg') center/cover no-repeat fixed;
+    backdrop-filter: blur(0px);
+    color: #fff;
 }
-
 
 /* Capa oscura para que se vea mejor el contenido */
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  z-index: -1;
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: -1;
 }
 
+/* ================== MENU LATERAL PEQUEÑO ================== */
 .nav {
     position: fixed;
     top: 0;
@@ -42,68 +42,66 @@ body::before {
     height: 100%; /* que llegue hasta abajo */
     background: rgba(0,0,0,0.85);
     padding: 20px;
-    transform: translateX(-100%); /* inicialmente escondido */
+    transform: translateX(-100%); /* escondido al inicio */
     transition: transform 0.3s ease;
     z-index: 999;
+    display: flex;
+    flex-direction: column;
 }
 
-/* ===== HEADER ===== */
-/* cuando se abre */
+/* cuando se abra */
 .nav.open {
-    left: 0;
+    transform: translateX(0);
 }
 
-
+/* Logo pequeño en la esquina superior izquierda */
 .logo-menu {
-    width: 90px;
-    height: 90px;
-    margin: 10px;
-    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
     border-radius: 50%;
-    border: 3px solid gold;
+    border: 2px solid gold;
     object-fit: cover;
 }
 
-
+/* Links del menú */
 .nav-inner {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 20px;
 }
-
 
 .nav-link {
-  color: gold;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(4px);
-  transition: 0.3s;
+    color: gold;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(4px);
+    transition: 0.3s;
 }
-
 
 .nav-link:hover {
-  background: rgba(255,215,0,0.3);
-  color: black;
+    background: rgba(255,215,0,0.3);
+    color: black;
 }
 
-
+/* Overlay cuando se abre el menú */
 .overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(2px);
-  display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
+    display: none;
+    z-index: 998;
 }
-
 
 .overlay.active {
-  display: block;
+    display: block;
 }
-/* HERO */
+
+/* ================== HERO ================== */
 .hero {
     padding: 140px 40px;
     text-align: center;
@@ -115,28 +113,26 @@ body::before {
     color: var(--dorado-brillo);
 }
 
-/* ===== SECCIONES ===== */
+/* ================== SECCIONES ================== */
 section {
-  padding: 60px 20px;
-  backdrop-filter: blur(5px);
-  background: rgba(0,0,0,0.25);
-  margin: 25px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,215,0,0.25);
+    padding: 60px 20px;
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.25);
+    margin: 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,215,0,0.25);
 }
-
 
 h1 span {
-  color: gold;
+    color: gold;
 }
-
 
 h2 {
-  color: gold;
-  text-shadow: 0 0 8px rgba(255,215,0,0.7);
+    color: gold;
+    text-shadow: 0 0 8px rgba(255,215,0,0.7);
 }
 
-/* CATÁLOGO */
+/* ================== CATÁLOGO ================== */
 .catalog {
     padding: 80px 40px;
 }
@@ -149,22 +145,22 @@ h2 {
     text-transform: uppercase;
 }
 
-/* TARJETAS */
-/* ===== CATÁLOGO ===== */
+/* ================== TARJETAS ================== */
 .catalog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
 }
 
 .item {
-  padding: 25px;
-  text-align: center;
-  background: rgba(255,255,255,0.07);
-  border-radius: 12px;
-  border: 1px solid rgba(255,215,0,0.3);
-  backdrop-filter: blur(6px);
-  color: white;
+    padding: 25px;
+    text-align: center;
+    background: rgba(255,255,255,0.07);
+    border-radius: 12px;
+    border: 1px solid rgba(255,215,0,0.3);
+    backdrop-filter: blur(6px);
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .item:hover {
@@ -172,17 +168,17 @@ h2 {
     box-shadow: 0 0 30px var(--dorado-brillo);
 }
 
-/* ===== FOOTER ===== */
+/* ================== FOOTER ================== */
 .footer {
-  text-align: center;
-  padding: 20px;
-  color: gold;
-  text-shadow: 0 0 5px gold;
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(6px);
+    text-align: center;
+    padding: 20px;
+    color: gold;
+    text-shadow: 0 0 5px gold;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
 }
 
-/* ANIMACIÓN */
+/* ================== ANIMACIÓN ================== */
 .elegant-entry {
     opacity: 0;
     animation: fadeUp 1.2s forwards ease-out;
