@@ -1,10 +1,9 @@
-/* PALETA DE LUJO */
+/* PALETA PREMIUM */
 :root {
     --negro: #000;
     --dorado: #d4af37;
     --dorado-brillo: #f7e7a1;
     --gris-oscuro: #0a0a0a;
-    --negro-suave: #111;
 }
 
 /* RESET */
@@ -18,21 +17,32 @@
 body {
     background: var(--negro);
     color: white;
-    background-image: url('fondo.png');  /* 👈 TU FONDO */
+    background-image: url('fondo.png'); /* 👈 Cambia por tu fondo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* HEADER PREMIUM */
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 35px;
+    padding: 18px 25px;
     background: rgba(0,0,0,0.85);
     border-bottom: 2px solid var(--dorado);
     backdrop-filter: blur(6px);
+    position: relative;
+    z-index: 50;
+}
+
+.menu-btn {
+    font-size: 32px;
+    color: var(--dorado-brillo);
+    background: none;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(0 0 4px var(--dorado));
 }
 
 .logo-box {
@@ -47,52 +57,66 @@ body {
 }
 
 .brand {
-    font-size: 26px;
-    font-weight: 600;
     color: var(--dorado-brillo);
-    letter-spacing: 2px;
+    font-size: 26px;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* BOTÓN MENÚ */
-.menu-btn {
-    font-size: 30px;
-    background: none;
-    color: var(--dorado);
-    border: none;
-    cursor: pointer;
+/* OVERLAY NEGRO */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    display: none;
+    z-index: 40;
 }
 
 /* MENÚ LATERAL */
 .nav {
-    display: none;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    background: rgba(10,10,10,0.95);
-    border-left: 2px solid var(--dorado);
-    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    background: rgba(5,5,5,0.95);
+    backdrop-filter: blur(6px);
+    border-right: 3px solid var(--dorado);
+    box-shadow: 0 0 20px var(--dorado);
+    transition: left 0.4s ease;
+    z-index: 60;
+}
+
+.nav.show {
+    left: 0;
+}
+
+.nav-inner {
+    display: flex;
     flex-direction: column;
+    padding: 30px;
+    gap: 20px;
 }
 
-.nav a {
-    padding: 15px;
-    text-decoration: none;
+.nav-link {
     color: white;
-    border-bottom: 1px solid var(--negro-suave);
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 20px;
+    border-bottom: 1px solid var(--gris-oscuro);
+    transition: 0.3s;
 }
 
-.nav a:hover {
-    background: var(--dorado);
+.nav-link:hover {
     color: black;
+    background: var(--dorado);
+    padding-left: 10px;
 }
 
 /* HERO */
 .hero {
     padding: 140px 40px;
     text-align: center;
-    background: rgba(0,0,0,0.6);
     backdrop-filter: blur(4px);
 }
 
@@ -100,78 +124,57 @@ body {
     color: var(--dorado-brillo);
 }
 
-/* CATÁLOGO ESTILO REVISTA */
+/* CATÁLOGO */
 .catalog {
     padding: 80px 40px;
 }
 
 .catalog h2 {
-    font-size: 36px;
     text-align: center;
-    margin-bottom: 40px;
+    font-size: 36px;
     color: var(--dorado-brillo);
+    margin-bottom: 40px;
     text-transform: uppercase;
 }
 
-/* TARJETAS TIPO REVISTA */
+/* TARJETAS */
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
     gap: 25px;
 }
 
 .item {
-    background: rgba(15, 15, 15, 0.85);
+    background: rgba(15,15,15,0.85);
     border: 3px solid var(--dorado);
     padding: 30px;
-    text-align: center;
     border-radius: 14px;
-    backdrop-filter: blur(6px);
-    transition: 0.4s ease;
+    text-align: center;
+    transition: 0.4s;
     box-shadow: 0 0 18px rgba(212,175,55,0.25);
 }
 
 .item:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 0 25px var(--dorado-brillo);
-}
-
-/* AJUSTES */
-.ajustes {
-    padding: 70px 40px;
-    text-align: center;
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 0 30px var(--dorado-brillo);
 }
 
 /* FOOTER */
 .footer {
     padding: 25px;
     text-align: center;
-    border-top: 2px solid var(--dorado);
     background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(4px);
+    border-top: 2px solid var(--dorado);
     color: var(--dorado-brillo);
 }
 
-/* ANIMACIÓN SUAVE PREMIUM */
+/* ANIMACIÓN */
 .elegant-entry {
     opacity: 0;
-    animation: show 1.2s ease forwards;
+    animation: fadeUp 1.2s forwards ease-out;
 }
 
-@keyframes show {
-    0% {
-        opacity: 0;
-        transform: translateY(25px);
-        filter: brightness(0.6);
-    }
-    60% {
-        opacity: 0.8;
-        transform: translateY(10px);
-        filter: brightness(1.2);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        filter: brightness(1);
-    }
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
